@@ -7,6 +7,10 @@ spring:
                 server-addr: 172.19.0.40:8848
                 username: nacos
                 password: admin123
+            config:
+                server-addr: 172.19.0.40:8848
+                username: nacos
+                password: admin123
         gateway:
             routes:
                 - id: user_route
@@ -21,5 +25,7 @@ spring:
                     - Path=/auth/**
                   filters:
                     - StripPrefix=1
+    config:
+        import: nacos:gateway.yml
 server:
     port: 28080
