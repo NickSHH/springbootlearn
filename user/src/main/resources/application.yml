@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: user
+    thymeleaf:
+        cache: false
+        prefix: classpath:/templates/
+        suffix: .html
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 172.19.0.40:8848
+                username: nacos
+                password: admin123
+server:
+    port: 28081
