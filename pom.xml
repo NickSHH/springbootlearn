@@ -18,6 +18,9 @@
         <module>gateway</module>
         <module>user</module>
         <module>auth</module>
+        <module>hiberate-demo</module>
+        <module>jpa-demo</module>
+        <module>springdata-jpa-demo</module>
     </modules>
 
     <properties>

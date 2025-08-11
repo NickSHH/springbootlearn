@@ -1,0 +1,22 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+    <session-factory>
+        <!-- 数据库连接配置保持不变 -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://172.19.0.41:3306/test_db</property>
+        <property name="connection.username">seauprad</property>
+        <property name="connection.password">admin123</property>
+ 
+        <!-- 连接池和方言配置 -->
+        <property name="connection.pool_size">10</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+ 
+        <!-- 实体类映射配置 -->
+        <mapping class="me.nick.springbootlearn.entity.User"/>
+    </session-factory>
+</hibernate-configuration>

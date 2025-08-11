@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        url: jdbc:mysql://172.19.0.41:3306/test_db?useSSL=false&serverTimezone=UTC
+        username: seauprad
+        password: admin123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        generate-ddl: true
+        show-sql: true
+        properties:
+            hibernate:
+                format_sql: true
+                dialect: org.hibernate.dialect.MySQLDialect
